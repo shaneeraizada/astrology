@@ -1,0 +1,28 @@
+<h1 id="tableLabel">Tatwas</h1>
+
+<p>This component demonstrates getting tatwas data from the server.</p>
+
+<p *ngIf="!tatwas"><em>Loading...</em></p>
+
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="tatwas">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Element</th>
+      <th>Attributes</th>
+      <th>Ruling Planets</th>
+      <th>Duration</th>
+      <th>First Day</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let tatwa of tatwas">
+      <td>{{ tatwa.name }}</td>
+      <td>{{ tatwa.element }}</td>
+      <td>{{ tatwa.attributes }}</td>
+      <td>{{ tatwa.rulingplanets }}</td>
+      <td>{{ tatwa.duration }}</td>
+      <td>{{ tatwa.dayswhenfirst }}</td>
+    </tr>
+  </tbody>
+</table>

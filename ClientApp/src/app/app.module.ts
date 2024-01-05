@@ -11,6 +11,7 @@ import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { FetchPlanetsComponent } from './fetch-planets/fetch-planets.component';
 import { FetchHousesComponent } from './fetch-houses/fetch-houses.component';
+import { FetchTatwasComponent } from './fetch-tatwas/fetch-tatwas.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FetchHousesComponent } from './fetch-houses/fetch-houses.component';
     CounterComponent,
     FetchDataComponent,
     FetchPlanetsComponent,
-    FetchHousesComponent
+    FetchHousesComponent,
+    FetchTatwasComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -31,7 +33,8 @@ import { FetchHousesComponent } from './fetch-houses/fetch-houses.component';
       { path: 'counter', component: CounterComponent },
       { path: 'fetch-data', component: FetchDataComponent },
       { path: 'fetch-planets', component: FetchPlanetsComponent },
-      { path: 'fetch-houses', component: FetchHousesComponent }
+      { path: 'fetch-houses', component: FetchHousesComponent },
+      { path: 'fetch-tatwas', component: FetchTatwasComponent }
     ])
   ],
   providers: [],
