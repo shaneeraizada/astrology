@@ -1,0 +1,24 @@
+<h1 id="tableLabel">Planets</h1>
+
+<p>This component demonstrates getting planets data from the server.</p>
+
+<p *ngIf="!planets"><em>Loading...</em></p>
+
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="planets">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Position</th>
+      <th>Zodiac Signs</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let planet of planets">
+      <td>{{ planet.name }}</td>
+      <td>{{ planet.description }}</td>
+      <td>{{ planet.position }}</td>
+      <td>{{ planet.zodiacsigns }}</td>
+    </tr>
+  </tbody>
+</table>

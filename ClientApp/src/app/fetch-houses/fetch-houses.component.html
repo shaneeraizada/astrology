@@ -1,0 +1,24 @@
+<h1 id="tableLabel">Planets</h1>
+
+<p>This component demonstrates getting houses data from the server.</p>
+
+<p *ngIf="!houses"><em>Loading...</em></p>
+
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="houses">
+  <thead>
+    <tr>
+      <th>Number</th>
+      <th>Names</th>
+      <th>Attributes</th>
+      <th>Planets</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let house of houses">
+      <td>{{ house.number }}</td>
+      <td>{{ house.names }}</td>
+      <td>{{ house.attributes }}</td>
+      <td>{{ house.planets }}</td>
+    </tr>
+  </tbody>
+</table>
